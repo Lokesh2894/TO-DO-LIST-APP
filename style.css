@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-left: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addTaskButton:hover {
+    background-color: #4cae4c;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    background: none;
+    border: none;
+    color: #5cb85c;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.filters button:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li span {
+    flex: 1;
+    font-size: 16px;
+}
+
+li .completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+li .edit-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+li button {
+    margin-left: 10px;
+    background: #f4f4f9;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+li button.complete {
+    background-color: #5bc0de;
+    color: white;
+}
+
+li button.complete:hover {
+    background-color: #31b0d5;
+}
+
+li button.edit {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+li button.edit:hover {
+    background-color: #ec971f;
+}
+
+li button.remove {
+    background-color: #d9534f;
+    color: white;
+}
+
+li button.remove:hover {
+    background-color: #c9302c;
+}
